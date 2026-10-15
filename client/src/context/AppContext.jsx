@@ -228,7 +228,7 @@ export function AppContextProvider({ children }) {
 
   useEffect(() => {
     return () => {
-      debouncedSave.cancel()
+      debouncedSave.flush()
     }
   },[debouncedSave])
 
@@ -237,6 +237,7 @@ export function AppContextProvider({ children }) {
     debouncedSave(files, activeProjects._id)
   },[activeProjects, user, debouncedSave]);
 
+  
   return (
     <AppContext
       value={{
