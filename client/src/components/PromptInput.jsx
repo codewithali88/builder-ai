@@ -14,7 +14,6 @@ const PromptInput = ({
   autoFocus = false,
   variant = "default",
 }) => {
-
   const [value, setValue] = useState("");
   const textareaRef = useRef(null);
 
