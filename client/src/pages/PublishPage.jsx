@@ -6,6 +6,7 @@ import Loading from "../components/Loading";
 import { AlertCircleIcon } from "lucide-react";
 import FullPagePreview from "../components/FullPagePreview";
 
+
 const PublishPage = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);

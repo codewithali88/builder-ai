@@ -7,6 +7,7 @@ import {
   SandpackProvider,
 } from "@codesandbox/sandpack-react";
 
+
 const FullPagePreview = ({ files }) => {
   const [showErrorOverlay, setShowErrorOverlay] = useState(true);
   //   convert livefiles to sandpack format
